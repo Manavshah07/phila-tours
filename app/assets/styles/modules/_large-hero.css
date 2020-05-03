@@ -1,0 +1,78 @@
+.large-hero{
+    
+    &__text-content {
+        position: absolute;
+        top: 38%;
+        left: 0;
+        transform: translateY(-100%);
+        text-align: center;
+        width: 100%;
+
+        @mixin extraLargeScreen{
+            padding-top: 100px;
+            position: absolute;
+            top: 45%;
+            left: 0;
+            transform: translateY(-50%);
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-title{
+        color: $orange;
+        font-size: 25px;
+        font-weight: 300;
+
+        /* @mixin smallScreen{
+            font-size: 30px;
+        } */
+        @mixin extraLargeScreen{
+            color: $orange;
+            font-size: 70px;
+            font-weight: 300;
+        }
+    
+    }
+
+    &-subtitle{
+        font-size: 16px;
+        font-weight: 200;
+        color: $orange;
+        margin-bottom: 10px;
+
+        @mixin extraLargeScreen{
+            font-size: 40px;
+            font-weight: 200;
+            color: $orange;
+            margin-bottom: 40px;
+        }
+    }
+
+    &-description{
+        color: $white;
+        font-size: 14px;
+        font-weight: 300;
+        /* margin: 5px 0 10px 0; */
+        padding: 0 20%;
+
+        @mixin extraLargeScreen{
+            color: $white;
+            font-size: 30px;
+            font-weight: 300;
+            /* margin: 5px 0 10px 0; */
+            padding: 0 35%;  
+        }
+    }
+}
+.reveal-item {
+    opacity: 0;
+    transition: all 1.5s ease-in;
+    transform: scale(1.2);
+}
+
+.reveal-item-is-visible {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 1.5s ease-out;
+}

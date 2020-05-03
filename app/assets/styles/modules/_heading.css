@@ -1,0 +1,27 @@
+.heading{
+    &-title{
+        text-transform: uppercase;
+        color: $darkBlue;
+        font-size: 18px;
+        font-weight: 500;
+
+        @mixin extraLargeScreen{
+            text-transform: uppercase;
+            color: $darkBlue;
+            font-size: 40px;
+            font-weight: 500;
+        }
+    }
+
+    &-subtitle{
+        color: $orange;
+        font-size: 13px;
+        font-weight: 500;
+
+        @mixin extraLargeScreen{
+            color: $orange;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.client{
+    background-color: #fff;
+    padding: 30px 50px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0,0,0.1);
+    margin-left: 30px;
+
+    &-avatar{
+        border-radius: 100%;
+        margin-left: 30px;
+    }
+
+    &-author{
+        font-size: 22px;
+        color: $orange;
+        font-weight: 500;
+        margin-left: 65px;
+    }
+
+    &-time{
+        color: $darkBlue;
+        font-size: 16px;
+        margin-left: 55px;
+        line-height: 1.5;
+    }
+
+    &-designation{
+        width: 100%;
+        margin-left: 15px;
+        line-height: 1.5;
+    }
+}
+
+.grid{
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    @mixin extraLargeScreen{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}

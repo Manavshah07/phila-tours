@@ -1,0 +1,38 @@
+.btn {
+    display: inline-block;
+    line-height: 1;
+    padding: 6px 12px;
+    text-align: center;
+    font-size: 14px;
+/* 
+        @mixin smallScreen{
+            font-size: 20px;
+        }
+
+        @mixin mediumScreen{
+            padding: 6px 12px;
+        } */
+
+        @mixin extraLargeScreen{
+            display: inline-block;
+            line-height: 1;
+            padding: 12px 24px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+    &-blue{
+        background-color: $darkBlue;
+        color: #fff;
+    }
+    
+    &-blue:hover,
+    &-orange:hover{
+        cursor: pointer;
+    }
+    
+    &-orange{
+        background-color: $orange;
+        color: #fff;
+    }
+}

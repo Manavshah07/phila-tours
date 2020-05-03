@@ -1,0 +1,55 @@
+.flexs{
+    display: block;
+
+    @mixin extraLargeScreen{
+        display: grid;
+        grid-template-columns: 4fr 8fr;
+    }
+    @mixin smallScreen{
+        /* display: block; */
+    }
+    @mixin mediumScreen{
+        /* display: block; */
+    }
+}
+.founder-img{
+    margin-left: 20px;
+
+    @mixin extraLargeScreen{
+        margin-left: -50px;
+    }
+}
+.generic-typography{
+    
+    h2{
+        margin-top: 30px;
+
+        @mixin extraLargeScreen{
+            margin-top: 0;
+        }
+    }
+    
+    p{
+        font-size: 13px;
+        font-weight: 300;
+        text-align: justify;
+        margin-bottom: 25px;
+        line-height: 1.5;
+        margin-left: 30px;
+
+        @mixin extraLargeScreen{
+            font-size: 16px;
+        }
+
+        a{
+            color: $orange;
+            font-weight: 500;
+        }
+
+        strong{
+            font-weight: 500;
+        }
+    }
+
+
+}

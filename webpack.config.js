@@ -21,7 +21,7 @@ module.exports = {
 
         contentBase: path.join(__dirname, "app"), //jidhar index file hoti hai it is easy to find all path but difficult to find index so tab ye use kiya h
         hot: true, //inject karta hai css matlab mene agar css me ek file chng ki to mujhe refresh krna padhta h but hot se ye mujhe khud sab krke dega
-        port: 1500, //it is used to broadcast the port
+        port: 1200, //it is used to broadcast the port
         host: '0.0.0.0'
     },
     mode: "development",

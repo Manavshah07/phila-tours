@@ -1,0 +1,54 @@
+.page-section{
+    background-color: $darkBlue;
+    color: #fff;
+
+    &-global{
+        margin-top: 50px;
+
+        @mixin extraLargeScreen{
+            margin-top: 0;
+        }
+    }
+
+    &-survival{
+        margin-top: 50px;
+        
+        @mixin extraLargeScreen{
+            margin-top: 0;
+        }
+    }
+    h2{
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    h3{
+        font-weight: 300;
+        font-size: 18px;
+    }
+     
+    P{
+        width: 90%;
+
+    }
+
+    .m-l-30{
+        margin-left: 0px!important;
+
+        @mixin extraLargeScreen{
+            margin-left: 25px!important;
+        }
+    }
+
+    .flex{
+        flex-wrap:wrap;
+        flex-direction: column;
+
+        @mixin extraLargeScreen{
+            display: grid;
+            grid-template-columns: 1fr 1fr;    
+        }
+    
+    }
+}
+
