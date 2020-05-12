@@ -20,6 +20,10 @@
     h2{
         font-size: 30px;
         font-weight: 500;
+
+        @mixin extraLargeScreen{
+            font-size: 50px;
+        }
     }
 
     h3{
@@ -36,7 +40,7 @@
         margin-left: 0px!important;
 
         @mixin extraLargeScreen{
-            margin-left: 25px!important;
+            margin-left: 30px!important;
         }
     }
 

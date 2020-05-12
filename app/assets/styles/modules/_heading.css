@@ -11,6 +11,13 @@
             font-size: 40px;
             font-weight: 500;
         }
+
+        @mixin mediumScreen{
+            font-size: 25px;
+        }
+        @mixin largeScreen{
+            font-size: 30px;
+        }
     }
 
     &-subtitle{
@@ -22,6 +29,14 @@
             color: $orange;
             font-size: 18px;
             font-weight: 500;
+        }
+
+        @mixin mediumScreen{
+             font-size: 18px;
+        }
+
+        @mixin largeScreen{
+            font-size: 18px;
         }
     }
 }

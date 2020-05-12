@@ -1,55 +1,76 @@
-.flexs{
-    display: block;
+#our-beginning {
+    img {
+        margin-left: -10px;
+        @mixin ExtraSmallScreen {
+            margin-left: 0;
+        }
+        @mixin extraLargeScreen {
+            margin-left: 50px;
+        }
+    }
+}
 
-    @mixin extraLargeScreen{
+.flexs {
+    display: block;
+    @mixin extraLargeScreen {
         display: grid;
         grid-template-columns: 4fr 8fr;
     }
-    @mixin smallScreen{
+    @mixin smallScreen {
         /* display: block; */
     }
-    @mixin mediumScreen{
+    @mixin mediumScreen {
         /* display: block; */
     }
 }
-.founder-img{
-    margin-left: 20px;
 
-    @mixin extraLargeScreen{
-        margin-left: -50px;
+.founder-img {
+    img {
+        margin-left: -10px;
     }
+    @mixin extraLargeScreen {
+        margin-left: -70px;
+    }
+    /* @mixin mediumScreen{
+        margin-left: 120px;
+    } */
 }
-.generic-typography{
-    
-    h2{
+
+.generic-typography {
+    @mixin extraLargeScreen {
+        margin-left: 30px;
+    }
+    h2 {
         margin-top: 30px;
-
-        @mixin extraLargeScreen{
+        @mixin extraLargeScreen {
             margin-top: 0;
+            margin-left: 70px;
+        }
+        @mixin mediumScreen {
+            font-size: 30px;
         }
     }
-    
-    p{
+    p {
         font-size: 13px;
         font-weight: 300;
         text-align: justify;
         margin-bottom: 25px;
         line-height: 1.5;
-        margin-left: 30px;
-
-        @mixin extraLargeScreen{
+        margin-left: 5px;
+        width: 90%;
+        @mixin extraLargeScreen {
+            font-size: 16px;
+            margin-left: 75px;
+        }
+        @mixin mediumScreen {
             font-size: 16px;
         }
-
-        a{
+        a {
             color: $orange;
             font-weight: 500;
         }
-
-        strong{
+        strong {
             font-weight: 500;
         }
     }
-
-
 }

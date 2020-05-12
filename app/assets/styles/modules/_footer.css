@@ -1,17 +1,26 @@
-.footer{
+.footer {
     background-color: $orange;
-    padding: 20px;
-
-    p{
+    padding: 20px 10px;
+    @mixin extraLargeScreen {
+        padding: 20px;
+    }
+    @mixin ExtraSmallScreen {
+        padding: 20px 0;
+    }
+    p {
         color: #fff;
-        font-size: 13px;
-
-        @mixin extraLargeScreen{
+        font-size: 10px;
+        @mixin extraLargeScreen {
             font-size: 16px;
         }
-        
-        a{
-            margin-left: 20px;
+        @mixin mediumScreen {
+            font-size: 16px;
+        }
+        a {
+            margin-left: 5px;
+            @mixin extraLargeScreen {
+                margin-left: 20px;
+            }
         }
     }
 }

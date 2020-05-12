@@ -8,5 +8,8 @@
 @import "modules/_heading.css";
 @import "modules/_our-beginning.css";
 @import "modules/_page-section.css";
-@import "modules/_testimonial.css";
+@import "modules/_testimonial";
 @import "modules/_footer.css";
+@import "modules/_header.css";
+@import "modules/_wrapper.css";
+@import "modules/_reveal-item.css";
